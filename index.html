@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>site pas du tout suspect</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pour continuer valider les informations</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 420px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333333;
+      text-align: center;
+      font-size: 22px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555555;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #0066cc;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0066cc;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    button:hover {
+      background-color: #004c99;
+    }
+  </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Continuer pour accéder au site</h2>
+    
+    <!-- Remplacez l'URL ci-dessous par le lien de votre site de destination -->
+    <form action="https://votre-site-destination.com" method="GET">
+      
+      <div class="form-group">
+        <label for="nom">nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Ex : Jean Dupont" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">e-mail *</label>
+        <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="entreprise">vile*</label>
+        <input type="text" id="ville" name="ville" placeholder="Ex : Paris" required>
+      </div>
+
+      <div class="form-group">
+        <label for="years">Age*</label>
+        <input type="text" id="years" name="age" placeholder="Ex : 15an" required>
+      </div>
+
+      <div class="form-group">
+        <label for="details">Informations complémentaires</label>
+        <textarea id="details" name="details" rows="3" placeholder="Service, numéro de poste, compétences..."></textarea>
+      </div>
+
+      <button type="submit">Envoyer et continuer vers le site</button>
+    </form>
+  </div>
+
+</body>
+</html>
